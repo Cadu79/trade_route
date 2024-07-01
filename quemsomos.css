@@ -1,0 +1,60 @@
+/* Estilos para o corpo (body) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho (header) */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 32px;
+    color: #333;
+}
+
+/* Estilos para a imagem */
+div img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px; /* Adicionando borda arredondada */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+}
+
+/* Estilos para os parágrafos (p) */
+p {
+    text-align: justify;
+    margin: 20px 0;
+    color: #666;
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* Estilos para os títulos de seção (h2) */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para o rodapé (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para os ícones sociais */
+.footer-social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px; /* Tamanho do ícone */
+}
+
+/* Estilos para os ícones sociais */
+.footer-social-icons a:hover {
+    color: #ffcc00; /* Mudança de cor ao passar o mouse */
+}

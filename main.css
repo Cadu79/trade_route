@@ -1,0 +1,449 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Estilo para o header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8; /* Altere a cor de fundo conforme necessário */
+  }
+  
+  /* Estilo para o logo */
+  header img {
+    max-height: 50px; /* Ajuste a altura conforme necessário */
+  }
+
+  /* Estilo para o carrossel */
+#carousel-section {
+  margin-top: 20px; /* Margem superior para separá-lo do cabeçalho */
+}
+
+/* Estilo para os slides */
+.slick-carousel img {
+  width: 100%; /* Garante que as imagens ocupem toda a largura do contêiner do carrossel */
+  height: auto; /* Altura automática para manter a proporção da imagem */
+}
+
+/* Estilo para tornar o carrossel responsivo */
+@media screen and (max-width: 768px) {
+  /* Define estilos específicos para dispositivos com largura máxima de 768px */
+  #carousel-section {
+    margin-top: 10px; /* Reduz a margem superior para dispositivos menores */
+  }
+}
+
+/* Estilos para a seção horizontal */
+#new-section {
+  display: flex; /* Torna os itens filhos flexíveis */
+  justify-content: space-between; /* Distribui os itens uniformemente ao longo do eixo principal (horizontalmente) */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 20px; /* Adiciona espaçamento interno */
+  background-color: #f0f0f0; /* Cor de fundo para destacar a seção */
+}
+
+#new-section div {
+  display: flex; /* Torna os itens filhos flexíveis */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+#new-section img {
+  width: 100px; /* Define a largura da imagem */
+  margin-right: 20px; /* Adiciona espaçamento à direita da imagem */
+}
+
+.section-content {
+  display: flex; /* Torna os itens filhos flexíveis */
+  flex-direction: column; /* Organiza os itens em uma coluna */
+}
+
+.horizontal-links {
+  display: flex; /* Torna os itens filhos flexíveis */
+  list-style: none; /* Remove os estilos padrão da lista */
+  padding: 0; /* Remove o espaçamento interno da lista */
+  margin: 0; /* Remove as margens padrão */
+}
+
+.horizontal-links li {
+  margin-right: 24px; /* Adiciona espaçamento entre os itens da lista */
+}
+
+@media screen and (max-width: 768px) {
+  /* Define estilos específicos para dispositivos com largura máxima de 768px */
+  .horizontal-links li {
+    margin-top: 10px; /* Reduz a margem superior para dispositivos menores */
+  }
+}
+
+  
+  /* Estilo para o menu de navegação */
+  .navbar {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333; /* Cor do texto */
+    padding: 10px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #007BFF; /* Cor do texto ao passar o mouse */
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Define estilos específicos para dispositivos com largura máxima de 768px */
+    .navbar {
+      margin-top: 10px; /* Reduz a margem superior para dispositivos menores */
+      justify-content: center;
+    }
+  }
+  
+  /* Estilo para dropdown */
+  .navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+  }
+  
+  .navbar .dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .navbar .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .navbar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Define estilos específicos para dispositivos com largura máxima de 768px */
+    .navbar .dropdown-content {
+      margin-top: 10px; /* Reduz a margem superior para dispositivos menores */
+      justify-content: center;
+    }
+  }
+  
+  /* Estilo para o corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+    
+  /* Estilo para botões */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-1 {
+    background-color: #28a745;
+  }
+  
+  .btn-1:hover {
+    background-color: #218838;
+  }
+  
+  .btn-2 {
+    background-color: #dc3545;
+  }
+  
+  .btn-2:hover {
+    background-color: #c82333;
+  }
+  
+  .btn-3 {
+    background-color: #17a2b8;
+  }
+  
+  .btn-3:hover {
+    background-color: #138496;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Define estilos específicos para dispositivos com largura máxima de 768px */
+    .btn {
+      margin-top: 10px; /* Reduz a margem superior para dispositivos menores */
+      justify-content: center;
+    }
+  }
+
+  /* Estilo para seções */
+  section {
+    padding: 20px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Define estilos específicos para dispositivos com largura máxima de 768px */
+    .section {
+      margin-top: 10px; /* Reduz a margem superior para dispositivos menores */
+      justify-content: center;
+    }
+  }
+  
+  .text-servic {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .tools-options {
+    margin-top: 10px;
+  }
+  
+  .request .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .request .img-left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .request .right {
+    flex: 2;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #6c757d;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  /* Slick slider custom styles */
+  .slick-slider {
+    margin-top: 20px;
+  }
+  
+  .slick-arrow {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .slick-arrow:hover {
+    background-color: #0056b3;
+  }
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  
+  .slick-track {
+    display: flex;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Define estilos específicos para dispositivos com largura máxima de 768px */
+    .slick {
+      margin-top: 10px; /* Reduz a margem superior para dispositivos menores */
+      justify-content: center;
+    }
+  }
+  /* Estilo da seção de serviços */
+  .service-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .service-container {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .service-container a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .service img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .service h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .btn-services {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .btn-services img {
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
+  
+  .slick-slide:hover {
+    transform: scale(1.05);
+  }
+  
+  .slick-slide img.img-top {
+    width: 100px;
+    margin: 1rem 0;
+  }
+  
+  .slick-slide h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .slick-slide p.text {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .slick-slide .btn-services {
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .slick-slide .btn-services img {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+  
+  /* Estilo dos botões do slick-slider */
+  .slick-prev,
+  .slick-next {
+    background: #004080;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .slick-prev {
+    left: -50px;
+  }
+  
+  .slick-next {
+    right: -50px;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    background: #003366;
+  }
+
+  #iframe-section {
+    padding: 20px;
+    background-color: #f0f0f0; /* Cor de fundo da seção */
+}
+
+#iframe-section iframe {
+    width: 100%; /* Faz o iframe ocupar toda a largura da seção */
+    height: 450px; /* Altura do iframe */
+    border: none; /* Remove a borda do iframe */
+    border-radius: 10px; /* Adiciona cantos arredondados ao iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+  
+  /* Estilo do footer */
+footer {
+    background-color: #004080;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-content p {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-social-icons {
+    margin-top: 1rem;
+  }
+  
+  .footer-social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-social-icons a:hover {
+    color: #f2f2f2;
+  }
+  
